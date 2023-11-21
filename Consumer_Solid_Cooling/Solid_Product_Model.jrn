@@ -1,0 +1,175 @@
+﻿/* JMP 17.0.0   01 */
+ListBox(vertical,near,
+graphics layer(gtext(text("* Cooling is nonlinear\!n* Much faster cooling in the Plant than in the Lab\!n* Core temperature is initially flat and then drops\!n* Good linear fit after excluding initial points (Theta > 0.97)"),from(741,104),to(981,272),filled(false),)
+)sub(
+OwnerBox(helpKey("Rowstate Legend"),sub(
+PictureBox(sub(
+TableBox(n markers(2),markers(rs(0,FilledCircle,-13912408),rs(0,FilledCircle,-4354269)),allowStyles(false),sub(
+StringColBox(n(2),title("Process"),flags(16),
+ strings("Lab","Plant"),markers(rs(0,FilledCircle,-13912408),rs(0,FilledCircle,-4354269)),titleWrap(true),User Resizable({1, 0}),))))))),
+ListBox(vertical,near,sub(
+OutlineBox(
+open(1),title("Product Core Temperature versus Time"),rerun(Bivariate(Y(:T_degC), X(:time_s), SendToReport(Dispatch({}, "Bivariate Fit of T_degC By time_s", OutlineBox, {Set Title("Product Core Temperature versus Time")}), Dispatch({}, "Bivar Plot", FrameBox, {Frame Size(657, 314), Marker Size(5), Marker Drawing Mode("Normal")})))),Context({Table("untitled 3"), Y("T_degC"), X("time_s")}),indent(16),default font id(2),helpKey("Bivariate Report"),sub(
+ListBox(vertical,near,sub(
+PictureBox(sub(
+BorderBox(top(8),left(5),bottom(8),right(14),sides(16384),options(0),xmin(0),ymin(0),color(0),sub(
+ScaleBox(id(1),axis(scaleType(0),scaleOrig(-108.84),scaleWidth(2938.68),widthMajor(500),
+nbin(5),nminor(0),timeCode(0),ndec(0),ndecSpec(99),FieldWidth(9),
+MinInitInt(-108.84),MaxInitInt(2829.84),LinearInit,MajorInit(500),MinorInit(0),NObsInit(23),
+options(showMajorTicks,showMinorTicks,showLabels,noMinorTickLabelsOnLogAxis,),scaleTypeOptions(),nLabelRows(1),labelRows(LabelRowNumeric(default font id(7),),),labelRows12(LabelRowContinuous(options(0),Automatic Font Size(0),Automatic Tick Marks(0),Inside Ticks(0),Label Alignment("Near"),Label Buffer Scale(1),Label Orientation("Horizontal"),Lax Label Range(0),Line Color("None"),Line Width(1),Major Grid Line Color({215, 215, 215}),Minimum Depth(0),Minimum Font Size(8),Minor Grid Line Color({240, 240, 240}),Row Title Side("None"),Show Major Grid(0),Show Major Labels(1),Show Major Ticks(1),Show Minor Grid(0),Show Minor Labels(0),Show Minor Ticks(1),Tick Offset(0),Truncate format to interval(1),Wrap Lines(0),default font id(7),),),),charid("time_s"),length(657),baselength(657),sub(
+ScaleBox(id(2),axis(scaleType(0),scaleOrig(23.584),scaleWidth(27.432),widthMajor(5),
+nbin(5),nminor(0),timeCode(0),ndec(0),ndecSpec(99),FieldWidth(9),
+MinInitInt(23.584),MaxInitInt(51.016),LinearInit,MajorInit(5),MinorInit(0),NObsInit(23),
+options(showMajorTicks,showMinorTicks,showLabels,noMinorTickLabelsOnLogAxis,),scaleTypeOptions(),nLabelRows(1),labelRows(LabelRowNumeric(default font id(7),),),labelRows12(LabelRowContinuous(options(0),Automatic Font Size(0),Automatic Tick Marks(0),Inside Ticks(0),Label Alignment("Near"),Label Buffer Scale(1),Label Orientation("Horizontal"),Lax Label Range(0),Line Color("None"),Line Width(1),Major Grid Line Color({215, 215, 215}),Minimum Depth(0),Minimum Font Size(8),Minor Grid Line Color({240, 240, 240}),Row Title Side("None"),Show Major Grid(0),Show Major Labels(1),Show Major Ticks(1),Show Minor Grid(0),Show Minor Labels(0),Show Minor Ticks(1),Tick Offset(0),Truncate format to interval(1),Wrap Lines(0),default font id(7),),),),charid("T_degC"),length(314),baselength(314),sub(
+ListBox(horizontal,near,sub(
+AxisBox(side(R),size(48,314),locked(false),scales(0,2,0,2),sub(
+TextEditBox("T_degC",default font id(9),wrapWidth(314),justification(1),vjustification(1),left,minSize(17,50),maxSize(17,50),BaseSize(0,0),sizeID(0,-1),))),
+ListBox(vertical,near,sub(
+FrameBox(size(657,314),border(12303),flags(0),markerSize(5),scales(1,2,1,2),seg(
+,SegPlaceholder(description("Grid Lines"),),SegPlaceholder(description("Reference Lines"),),MarkerSeg(n(23),nv(1),MarkerItem(
+x(0,45,120,195,330,520,695,900,1395,1800
+,0,85,137,195,248,353,465,728,1392,1830
+,2145,2531,2721),
+y(50,50,49.2,45.6,42.3,36.7,35.2,31.6,26.5,24.6
+,50,49.9,49.6,48.8,47,47.4,43.1,40.3,32.5,30.1
+,28.7,27.8,26.9),),states(rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408)
+,rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408)),)),autoFast,helpKey("Bivar Plot"),),
+AxisBox(side(T),size(657,42),locked(false),scales(1,0,1,0),sub(
+TextEditBox("time_s",default font id(9),wrapWidth(657),justification(1),vjustification(1),minSize(42,17),maxSize(42,17),BaseSize(0,0),sizeID(-1,0),))))))))))))))),
+PictureBox(sub(
+BorderBox(top(4),left(8),bottom(2),right(5),sides(143),options(0),xmin(0),ymin(0),color(0),sub(
+ListBox(vertical,near,))))))))))),
+ListBox(vertical,near,sub(
+OutlineBox(
+open(1),title("-ln(Theta) versus Time"),rerun(Bivariate(Y(:Name("-ln(Theta)")), X(:time_s), SendToReport(Dispatch({}, "Bivariate Fit of -ln(Theta) By time_s", OutlineBox, {Set Title("-ln(Theta) versus Time")}), Dispatch({}, "Bivar Plot", FrameBox, {Frame Size(720, 400), Marker Size(6), Marker Drawing Mode("Normal")})))),Context({Table("consumer_solid"), Y("-ln(Theta)"), X("time_s")}),indent(16),default font id(2),helpKey("Bivariate Report"),sub(
+ListBox(vertical,near,sub(
+PictureBox(sub(
+BorderBox(top(8),left(5),bottom(8),right(14),sides(16384),options(0),xmin(0),ymin(0),color(0),sub(
+ScaleBox(id(1),axis(scaleType(0),scaleOrig(-108.84),scaleWidth(2938.68),widthMajor(500),
+nbin(5),nminor(0),timeCode(0),ndec(0),ndecSpec(99),FieldWidth(9),
+MinInitInt(-108.84),MaxInitInt(2829.84),LinearInit,MajorInit(500),MinorInit(0),NObsInit(23),
+options(showMajorTicks,showMinorTicks,showLabels,noMinorTickLabelsOnLogAxis,),scaleTypeOptions(),nLabelRows(1),labelRows(LabelRowNumeric(default font id(7),),),labelRows12(LabelRowContinuous(options(0),Automatic Font Size(0),Automatic Tick Marks(0),Inside Ticks(0),Label Alignment("Near"),Label Buffer Scale(1),Label Orientation("Horizontal"),Lax Label Range(0),Line Color("None"),Line Width(1),Major Grid Line Color({215, 215, 215}),Minimum Depth(0),Minimum Font Size(8),Minor Grid Line Color({240, 240, 240}),Row Title Side("None"),Show Major Grid(0),Show Major Labels(1),Show Major Ticks(1),Show Minor Grid(0),Show Minor Labels(0),Show Minor Ticks(1),Tick Offset(0),Truncate format to interval(1),Wrap Lines(0),default font id(7),),),),charid("time_s"),length(720),baselength(720),sub(
+ScaleBox(id(2),axis(scaleType(0),scaleOrig(-0.113033329470344),scaleWidth(3.11303332947034),widthMajor(0.5),
+nbin(6),nminor(0),timeCode(0),ndec(0),ndecSpec(99),FieldWidth(9),
+MinInitInt(-0.113033329470344),MaxInitInt(3),LinearInit,MajorInit(0.5),MinorInit(0),NObsInit(23),
+options(showMajorTicks,showMinorTicks,showLabels,noMinorTickLabelsOnLogAxis,),scaleTypeOptions(),nLabelRows(1),labelRows(LabelRowNumeric(default font id(7),),),labelRows12(LabelRowContinuous(options(0),Automatic Font Size(0),Automatic Tick Marks(0),Inside Ticks(0),Label Alignment("Near"),Label Buffer Scale(1),Label Orientation("Horizontal"),Lax Label Range(0),Line Color("None"),Line Width(1),Major Grid Line Color({215, 215, 215}),Minimum Depth(0),Minimum Font Size(8),Minor Grid Line Color({240, 240, 240}),Row Title Side("None"),Show Major Grid(0),Show Major Labels(1),Show Major Ticks(1),Show Minor Grid(0),Show Minor Labels(0),Show Minor Ticks(1),Tick Offset(0),Truncate format to interval(1),Wrap Lines(0),default font id(7),),),),charid("-ln(Theta)"),length(400),baselength(400),sub(
+ListBox(horizontal,near,sub(
+AxisBox(side(R),size(52,400),locked(false),scales(0,2,0,2),sub(
+TextEditBox("-ln(Theta)",default font id(9),wrapWidth(400),justification(1),vjustification(1),left,minSize(17,60),maxSize(17,60),BaseSize(0,0),sizeID(0,-1),))),
+ListBox(vertical,near,sub(
+FrameBox(size(720,400),border(12303),flags(0),markerSize(6),scales(1,2,1,2),seg(
+,SegPlaceholder(description("Grid Lines"),),SegPlaceholder(description("Reference Lines"),),MarkerSeg(n(23),nv(1),MarkerItem(
+x(0,45,120,195,330,520,695,900,1395,1800
+,0,85,137,195,248,353,465,728,1392,1830
+,2145,2531,2721),
+y(0,0,0.0300774552372778,0.177886959726089,0.335731770093489,0.67844103317025,0.794400914265118,1.14407466274487,2.04307389750896,2.82583323675859
+,0,0.00371057939653571,0.0149256502166756,0.0454623740767574,0.117783035656384,0.101253733705173,0.295117050939299,0.445130364500596,1.04454506739783,1.33574208195706
+,1.55537069116382,1.72722094809048,1.93486031286873),),states(rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408)
+,rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408)),)),autoFast,helpKey("Bivar Plot"),),
+AxisBox(side(T),size(720,42),locked(false),scales(1,0,1,0),sub(
+TextEditBox("time_s",default font id(9),wrapWidth(720),justification(1),vjustification(1),minSize(42,17),maxSize(42,17),BaseSize(0,0),sizeID(-1,0),))))))))))))))),
+PictureBox(sub(
+BorderBox(top(4),left(8),bottom(2),right(5),sides(143),options(0),xmin(0),ymin(0),color(0),sub(
+ListBox(vertical,near,))))))))))),
+ListBox(vertical,near,sub(
+OutlineBox(
+open(1),title("-ln(Theta) versus Time"),rerun(Bivariate(Y(:Name("-ln(Theta)")), X(:time_s), Fit Where(:Process == "Lab", Fit Line({Line Color({212, 73, 88})})), Fit Where(:Process == "Plant", Fit Line({Line Color({66, 112, 221})})), SendToReport(Dispatch({}, "Bivariate Fit of -ln(Theta) By time_s", OutlineBox, {Set Title("-ln(Theta) versus Time")}), Dispatch({}, "Bivar Plot", FrameBox, {Frame Size(720, 400), Marker Size(6), Marker Drawing Mode("Normal"), Grid Line Order(5), Reference Line Order(6)}), Dispatch({"Linear Fit Process==Lab"}, "Analysis of Variance", OutlineBox, {Close(1)}), Dispatch({"Linear Fit Process==Plant"}, "Analysis of Variance", OutlineBox, {Close(1)})))),Context({Table("consumer_solid"), Y("-ln(Theta)"), X("time_s")}),indent(16),default font id(2),helpKey("Bivariate Report"),sub(
+ListBox(vertical,near,
+graphics layer(gtext(text("Good linear fits for both processes (with initial points excluded)"),from(443,497),to(701,545),filled(false),)
+)sub(
+PictureBox(sub(
+BorderBox(top(8),left(5),bottom(8),right(14),sides(16384),options(0),xmin(0),ymin(0),color(0),sub(
+ScaleBox(id(1),axis(scaleType(0),scaleOrig(-108.84),scaleWidth(2938.68),widthMajor(500),
+nbin(5),nminor(0),timeCode(0),ndec(0),ndecSpec(99),FieldWidth(9),
+MinInitInt(-108.84),MaxInitInt(2829.84),LinearInit,MajorInit(500),MinorInit(0),NObsInit(23),
+options(showMajorTicks,showMinorTicks,showLabels,noMinorTickLabelsOnLogAxis,),scaleTypeOptions(),nLabelRows(1),labelRows(LabelRowNumeric(default font id(7),),),labelRows12(LabelRowContinuous(options(0),Automatic Font Size(0),Automatic Tick Marks(0),Inside Ticks(0),Label Alignment("Near"),Label Buffer Scale(1),Label Orientation("Horizontal"),Lax Label Range(0),Line Color("None"),Line Width(1),Major Grid Line Color({215, 215, 215}),Minimum Depth(0),Minimum Font Size(8),Minor Grid Line Color({240, 240, 240}),Row Title Side("None"),Show Major Grid(0),Show Major Labels(1),Show Major Ticks(1),Show Minor Grid(0),Show Minor Labels(0),Show Minor Ticks(1),Tick Offset(0),Truncate format to interval(1),Wrap Lines(0),default font id(7),),),),charid("time_s"),length(720),baselength(720),sub(
+ScaleBox(id(2),axis(scaleType(0),scaleOrig(-0.113033329470344),scaleWidth(3.11303332947034),widthMajor(0.5),
+nbin(6),nminor(0),timeCode(0),ndec(0),ndecSpec(99),FieldWidth(9),
+MinInitInt(-0.113033329470344),MaxInitInt(3),LinearInit,MajorInit(0.5),MinorInit(0),NObsInit(23),
+options(showMajorTicks,showMinorTicks,showLabels,noMinorTickLabelsOnLogAxis,),scaleTypeOptions(),nLabelRows(1),labelRows(LabelRowNumeric(default font id(7),),),labelRows12(LabelRowContinuous(options(0),Automatic Font Size(0),Automatic Tick Marks(0),Inside Ticks(0),Label Alignment("Near"),Label Buffer Scale(1),Label Orientation("Horizontal"),Lax Label Range(0),Line Color("None"),Line Width(1),Major Grid Line Color({215, 215, 215}),Minimum Depth(0),Minimum Font Size(8),Minor Grid Line Color({240, 240, 240}),Row Title Side("None"),Show Major Grid(0),Show Major Labels(1),Show Major Ticks(1),Show Minor Grid(0),Show Minor Labels(0),Show Minor Ticks(1),Tick Offset(0),Truncate format to interval(1),Wrap Lines(0),default font id(7),),),),charid("-ln(Theta)"),length(400),baselength(400),sub(
+ListBox(horizontal,near,sub(
+AxisBox(side(R),size(52,400),locked(false),scales(0,2,0,2),sub(
+TextEditBox("-ln(Theta)",default font id(9),wrapWidth(400),justification(1),vjustification(1),left,minSize(17,60),maxSize(17,60),BaseSize(0,0),sizeID(0,-1),))),
+ListBox(vertical,near,sub(
+FrameBox(size(720,400),border(12303),flags(0),markerSize(6),scales(1,2,1,2),seg(
+,SegPlaceholder(description("Grid Lines"),),SegPlaceholder(description("Reference Lines"),),MarkerSeg(n(23),nv(1),MarkerItem(
+x(0,45,120,195,330,520,695,900,1395,1800
+,0,85,137,195,248,353,465,728,1392,1830
+,2145,2531,2721),
+y(0,0,0.0300774552372778,0.177886959726089,0.335731770093489,0.67844103317025,0.794400914265118,1.14407466274487,2.04307389750896,2.82583323675859
+,0,0.00371057939653571,0.0149256502166756,0.0454623740767574,0.117783035656384,0.101253733705173,0.295117050939299,0.445130364500596,1.04454506739783,1.33574208195706
+,1.55537069116382,1.72722094809048,1.93486031286873),),states(rs(2,Dot,-4354269),rs(2,Dot,-4354269),rs(2,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(0,Dot,-4354269),rs(2,Dot,-13912408),rs(2,Dot,-13912408),rs(2,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408)
+,rs(0,Dot,-13912408),rs(0,Dot,-13912408),rs(0,Dot,-13912408)),),LineSeg(properties(color(-13912408), width(2)),n(2),x(-108.84,2829.84),y(-0.164084257884158,2.03370960254381),log curve(true),selectable(false),selectionMode(0),domainDim(0),),LineSeg(properties(color(-4354269), width(2)),n(2),x(-108.84,2829.84),y(-0.409847937292876,4.43163548590518),log curve(true),selectable(false),selectionMode(0),domainDim(0),)),autoFast,helpKey("Bivar Plot"),),
+AxisBox(side(T),size(720,42),locked(false),scales(1,0,1,0),sub(
+TextEditBox("time_s",default font id(9),wrapWidth(720),justification(1),vjustification(1),minSize(42,17),maxSize(42,17),BaseSize(0,0),sizeID(-1,0),))))))))))))))),
+PictureBox(sub(
+BorderBox(top(4),left(8),bottom(2),right(5),sides(143),options(0),xmin(0),ymin(0),color(0),sub(
+ListBox(vertical,near,sub(
+ListBox(horizontal,near,sub(
+CustomBox(size(24,16),script({Pen Color({212, 73, 88}), Line Style(0), Pen Size(2), H Line(0, 0.9, 0.5), Pen Size(1), Pen Color("Black"), Line Style(0)})),
+TextEditBox("Linear Fit Process==Lab",minSize(176,20),maxSize(176,20),BaseSize(0,0),))),
+ListBox(horizontal,near,sub(
+CustomBox(size(24,16),script({Pen Color({66, 112, 221}), Line Style(0), Pen Size(2), H Line(0, 0.9, 0.5), Pen Size(1), Pen Color("Black"), Line Style(0)})),
+TextEditBox("Linear Fit Process==Plant",minSize(185,20),maxSize(185,20),BaseSize(0,0),))))))))))),
+OutlineBox(
+open(1),title("Linear Fit Process==Lab"),Context({Process("Lab")}),indent(16),default font id(2),helpKey("Bivar Poly"),sub(
+ListBox(vertical,near,sub(
+TextEditBox("-ln(Theta) = -0.082684 + 0.0007479*time_s",minSize(307,20),maxSize(307,20),BaseSize(0,0),),
+OutlineBox(
+open(1),title("Summary of Fit"),horizontal,indent(16),default font id(2),helpKey("Bivar Summary"),sub(
+TableBox(sub(
+StringColBox(n(5),flags(48),
+ strings("RSquare","RSquare Adj","Root Mean Square Error","Mean of Response","Observations (or Sum Wgts)"),titleWrap(true),User Resizable({1, 0}),),
+NumberColBox(titleWrap(true),n(5),width(8),decimal(99),newdecimal(-1),numbers(0.994653852187144,0.993985583710537,0.0574133473427771,0.860248566035614,10),User Resizable({0, 0}),))))),
+OutlineBox(
+open(0),title("Analysis of Variance"),indent(16),default font id(2),helpKey("Bivar Anova"),sub(
+TableBox(sub(
+StringColBox(n(3),title("Source"),flags(48),
+ strings("Model","Error","C. Total"),titleWrap(true),User Resizable({1, 0}),),
+NumberColBox(titleWrap(true),n(3),title("DF"),width(6),decimal(99),newdecimal(-1),numbers(1,8,9),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(3),title("Sum of Squares"),width(10),decimal(7),newdecimal(7),numbers(4.90621673950641,0.0263703396248189,4.93258707913123),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(2),title("Mean Square"),width(8),decimal(5),newdecimal(5),numbers(4.90621673950641,0.00329629245310237),User Resizable({0, 0}),),
+ColStackBox(vertical,near,sub(
+NumberColBox(titleWrap(true),n(1),title("F Ratio"),width(8),decimal(4),newdecimal(4),numbers(1488.4045664361),User Resizable({0, 0}),),
+NumberColBox(condFormat("PValue"),titleWrap(true),n(1),title("Prob > F"),width(8),decimal(97),newdecimal(-1),numbers(2.23847764300646e-10),User Resizable({0, 0}),))))))),
+OutlineBox(
+open(0),title("Parameter Estimates"),indent(16),default font id(2),helpKey("Bivar Estimates"),sub(
+TableBox(sub(
+StringColBox(n(2),title("Term"),flags(48),
+ strings("Intercept","time_s"),titleWrap(true),User Resizable({1, 0}),),
+StringColBox(n(2),title("~Bias"),flags(16),titleWrap(true),User Resizable({1, 0}),),
+NumberColBox(titleWrap(true),n(2),title("Estimate"),width(9),decimal(99),newdecimal(-1),numbers(-0.0826844852757152,0.000747884717093377),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(2),title("Std Error"),width(8),decimal(99),newdecimal(-1),numbers(0.0304466016554384,0.0000193853729942209),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(2),title("t Ratio"),width(6),decimal(2),newdecimal(2),numbers(-2.71572132126431,38.5798466357255),User Resizable({0, 0}),),
+NumberColBox(condFormat("PValue"),titleWrap(true),n(2),title("Prob>|t|"),width(6),decimal(97),newdecimal(-1),numbers(0.0264230834992346,2.23847764300646e-10),User Resizable({0, 0}),))))))))),
+OutlineBox(
+open(1),title("Linear Fit Process==Plant"),Context({Process("Plant")}),indent(16),default font id(2),helpKey("Bivar Poly"),sub(
+ListBox(vertical,near,sub(
+TextEditBox("-ln(Theta) = -0.230534 + 0.0016475*time_s",minSize(307,20),maxSize(307,20),BaseSize(0,0),),
+OutlineBox(
+open(1),title("Summary of Fit"),horizontal,indent(16),default font id(2),helpKey("Bivar Summary"),sub(
+TableBox(sub(
+StringColBox(n(5),flags(48),
+ strings("RSquare","RSquare Adj","Root Mean Square Error","Mean of Response","Observations (or Sum Wgts)"),titleWrap(true),User Resizable({1, 0}),),
+NumberColBox(titleWrap(true),n(5),width(8),decimal(99),newdecimal(-1),numbers(0.991763180474004,0.990115816568805,0.0957261704925959,1.14277749632391,7),User Resizable({0, 0}),))))),
+OutlineBox(
+open(0),title("Analysis of Variance"),indent(16),default font id(2),helpKey("Bivar Anova"),sub(
+TableBox(sub(
+StringColBox(n(3),title("Source"),flags(48),
+ strings("Model","Error","C. Total"),titleWrap(true),User Resizable({1, 0}),),
+NumberColBox(titleWrap(true),n(3),title("DF"),width(6),decimal(99),newdecimal(-1),numbers(1,5,6),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(3),title("Sum of Squares"),width(10),decimal(7),newdecimal(7),numbers(5.51670556523556,0.0458174985858877,5.56252306382145),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(2),title("Mean Square"),width(8),decimal(5),newdecimal(5),numbers(5.51670556523556,0.00916349971717754),User Resizable({0, 0}),),
+ColStackBox(vertical,near,sub(
+NumberColBox(titleWrap(true),n(1),title("F Ratio"),width(8),decimal(4),newdecimal(4),numbers(602.030418017492),User Resizable({0, 0}),),
+NumberColBox(condFormat("PValue"),titleWrap(true),n(1),title("Prob > F"),width(8),decimal(97),newdecimal(-1),numbers(0.0000020968124173219),User Resizable({0, 0}),))))))),
+OutlineBox(
+open(0),title("Parameter Estimates"),indent(16),default font id(2),helpKey("Bivar Estimates"),sub(
+TableBox(sub(
+StringColBox(n(2),title("Term"),flags(48),
+ strings("Intercept","time_s"),titleWrap(true),User Resizable({1, 0}),),
+StringColBox(n(2),title("~Bias"),flags(16),titleWrap(true),User Resizable({1, 0}),),
+NumberColBox(titleWrap(true),n(2),title("Estimate"),width(9),decimal(99),newdecimal(-1),numbers(-0.230533736433688,0.00164750276423362),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(2),title("Std Error"),width(8),decimal(99),newdecimal(-1),numbers(0.0666466537557614,0.0000671455034569177),User Resizable({0, 0}),),
+NumberColBox(titleWrap(true),n(2),title("t Ratio"),width(6),decimal(2),newdecimal(2),numbers(-3.45904442972517,24.5363081578605),User Resizable({0, 0}),),
+NumberColBox(condFormat("PValue"),titleWrap(true),n(2),title("Prob>|t|"),width(6),decimal(97),newdecimal(-1),numbers(0.0180608741161268,0.0000020968124173219),User Resizable({0, 0}),)))))))))))))))
